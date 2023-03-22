@@ -1,0 +1,4 @@
+[2023-03-09 00:26:06] [WARNING]: Protocol -> device lock is disable. http api may fail. 
+[2023-03-09 00:26:27] [WARNING]: 警告: 长消息延迟为 1359ms, 大于 1000ms, 可能导致无法接收/发送长消息的情况, 请检查本地网络状态. 
+[2023-03-09 00:51:22] [WARNING]: Protocol -> device lock is disable. http api may fail. 
+[2023-03-09 01:25:03] [WARNING]: Protocol -> device lock is disable. http api may fail. 

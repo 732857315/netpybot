@@ -1,0 +1,173 @@
+1.登录login
+
+-----------POST：
+curl -X POST https://api.openai.com/dashboard/onboarding/login \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer sess-Q8HQtpqbee11OwMRZRuyE68WlLEzDT6Rz5DFNu7b"
+
+curl -X POST https://api.openai.com/dashboard/onboarding/login -H "Content-Type: application/json" -H "Authorization: Bearer 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"
+
+curl -X OPTIONS https://api.openai.com/dashboard/onboarding/logout -H "Content-Type: application/json" -H "Authorization: Bearer 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"
+
+返回：
+{
+  "object": "login",
+  "user": {
+    "object": "user",
+    "id": "user-kDUGAQLXCoAZ5eDAqnLC8xFt",
+    "email": "rydypoweru0@hotmail.com",
+    "name": "Groden Meredyth",
+    "picture": "https://s.gravatar.com/avatar/4cacd40402bb57d654127e886eac0855?s=480&r=pg&d=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Fry.png",
+    "created": 1675956780,
+    "groups": [],
+    "session": {
+      "sensitive_id": "sess-Q8HQtpqbee11OwMRZRuyE68WlLEzDT6Rz5DFNu7b",
+      "object": "api_key",
+      "created": 1677853935,
+      "last_use": 1677853936,
+      "publishable": false
+    },
+    "orgs": {
+      "object": "list",
+      "data": [
+        {
+          "object": "organization",
+          "id": "org-UZlfOJqxeifAxFxTo2sGwtVR",
+          "created": 1675956780,
+          "title": "Personal",
+          "name": "user-kdugaqlxcoaz5edaqnlc8xft",
+          "description": "Personal org for rydypoweru0@hotmail.com",
+          "personal": true,
+          "is_default": true,
+          "role": "owner",
+          "groups": []
+        }
+      ]
+    },
+    "intercom_hash": "fec09310c17327159cb330bd528451e814357b8ae4183e7288b246a3bb2cab6a"
+  },
+  "invites": []
+}
+2.获取users使用者
+-----------GET：
+curl https://api.openai.com/v1/organizations/org-UZlfOJqxeifAxFxTo2sGwtVR/users \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer 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"
+
+curl https://api.openai.com/v1/organizations/org-UZlfOJqxeifAxFxTo2sGwtVR/users -H "Content-Type: application/json" -H "Authorization: Bearer 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"
+
+curl https://api.openai.com/v1/organizations/org-UZlfOJqxeifAxFxTo2sGwtVR/users -H "Content-Type: application/json" -H "Authorization: Bearer sess-Q8HQtpqbee11OwMRZRuyE68WlLEzDT6Rz5DFNu7b"
+
+返回：
+{
+  "members": {
+    "object": "list",
+    "data": [
+      {
+        "object": "organization_user",
+        "role": "owner",
+        "created": 1675956780,
+        "user": {
+          "object": "user",
+          "id": "user-kDUGAQLXCoAZ5eDAqnLC8xFt",
+          "name": "Groden Meredyth",
+          "email": "rydypoweru0@hotmail.com",
+          "picture": "https://s.gravatar.com/avatar/4cacd40402bb57d654127e886eac0855?s=480&r=pg&d=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Fry.png"
+        }
+      }
+    ]
+  },
+  "invited": [],
+  "can_invite": true
+}
+3.获取subscription（订阅费）
+
+-----------GET：
+curl https://api.openai.com/dashboard/billing/subscription \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer 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"
+
+curl https://api.openai.com/dashboard/billing/subscription -H "Content-Type: application/json" -H "Authorization: Bearer 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"
+返回：
+{
+  "object": "billing_subscription",
+  "has_payment_method": false,
+  "canceled": false,
+  "canceled_at": null,
+  "delinquent": null,
+  "access_until": 1685577600,
+  "soft_limit": 240000,
+  "hard_limit": 300000,
+  "system_hard_limit": 300000,
+  "soft_limit_usd": 14.4,
+  "hard_limit_usd": 18.0,
+  "system_hard_limit_usd": 18.0,
+  "plan": {
+    "title": "Explore",
+    "id": "free"
+  },
+  "account_name": "Groden Meredyth",
+  "po_number": null,
+  "billing_email": null,
+  "tax_ids": null,
+  "billing_address": null,
+  "business_address": null
+}
+
+4.获取credit_grants（信用补贴）
+
+---------GET：
+curl https://api.openai.com/dashboard/billing/credit_grants \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer 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"
+
+curl https://api.openai.com/dashboard/billing/credit_grants -H "Content-Type: application/json" -H "Authorization: Bearer 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"
+返回：
+{
+  "object": "credit_summary",
+  "total_granted": 18.0,
+  "total_used": 1.1047,
+  "total_available": 16.8953,
+  "grants": {
+    "object": "list",
+    "data": [
+      {
+        "object": "credit_grant",
+        "id": "36767b23-0006-4145-8bb0-4084541f0407",
+        "grant_amount": 18.0,
+        "used_amount": 1.1047,
+        "effective_at": 1675900800.0, #日期：1970年到今天的秒数，时间戳
+        "expires_at": 1685577600.0
+      }
+    ]
+  }
+}
+其他:python:
+import time
+time.time()
+
+import arrow
+arrow.utcnow().timestamp
+
+5.获取某段时间使用记录
+
+---------GET：#CURL有问题，待修改
+curl ’https://api.openai.com/dashboard/billing/usage?end_date=2023-04-01&start_date=2023-03-01‘ \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer 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"
+
+curl ’https://api.openai.com/dashboard/billing/usage?end_date=2023-04-01&start_date=2023-03-01‘ -H "Content-Type: application/json" -H "Authorization: Bearer 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"
+
+6.获取某天使用记录
+
+---------GET：
+curl https://api.openai.com/v1/usage?date=2023-03-02 \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer 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"
+
+curl https://api.openai.com/v1/usage?date=2023-03-02 -H "Content-Type: application/json" -H "Authorization: Bearer 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"
+
+7.其他：请求组织（个人用不到）
+curl https://api.openai.com/v1/models \
+  -H 'Authorization: Bearer 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' \
+  -H 'OpenAI-Organization: org-UZlfOJqxeifAxFxTo2sGwtVR'

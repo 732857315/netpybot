@@ -1,0 +1,40 @@
+[2023-03-05 09:05:43] [WARNING]: 账号密码未配置, 将使用二维码登录. 
+[2023-03-05 09:05:43] [WARNING]: 将在 5秒 后继续. 
+[2023-03-05 18:35:26] [WARNING]: 账号密码未配置, 将使用二维码登录. 
+[2023-03-05 18:35:26] [WARNING]: 将在 5秒 后继续. 
+[2023-03-05 18:35:53] [WARNING]: Protocol -> device lock is disable. http api may fail. 
+[2023-03-05 18:36:23] [ERROR]: Protocol -> sync channel error: Packet failed to sendPacket: connection closed 
+[2023-03-05 18:36:23] [FATAL]: 遇到错误: Packet failed to sendPacket: connection closed 
+[2023-03-05 18:36:29] [WARNING]: 账号密码未配置, 将使用二维码登录. 
+[2023-03-05 18:36:29] [WARNING]: 将在 5秒 后继续. 
+[2023-03-05 18:36:49] [WARNING]: Protocol -> device lock is disable. http api may fail. 
+[2023-03-05 18:37:01] [WARNING]: 上报 Event 数据到 http://127.0.0.1:5701/ 失败: Post "http://127.0.0.1:5701/": dial tcp 127.0.0.1:5701: connectex: No connection could be made because the target machine actively refused it. 将进行第 1 次重试 
+[2023-03-05 18:41:57] [WARNING]: Protocol -> device lock is disable. http api may fail. 
+[2023-03-05 18:44:01] [WARNING]: 虚拟设备信息不存在, 将自动生成随机设备. 
+[2023-03-05 18:44:07] [WARNING]: 恢复会话失败: exchange_emp failed: 16 , 尝试使用正常流程登录. 
+[2023-03-05 18:44:08] [WARNING]: 登录需要滑条验证码, 请选择验证方式:  
+[2023-03-05 18:44:08] [WARNING]: 1. 使用浏览器抓取滑条并登录 
+[2023-03-05 18:44:08] [WARNING]: 2. 使用手机QQ扫码验证 (需要手Q和gocq在同一网络下). 
+[2023-03-05 18:44:08] [WARNING]: 请输入(1 - 2) (将在10秒后自动选择1)： 
+[2023-03-05 18:44:18] [WARNING]: 请前往该地址验证 -> https://captcha.go-cqhttp.org/captcha?id=ptaC9PoH&style=simple&aid=16&uin=195891736&sid=6539268785659212408&cap_cd=HqIwUbZNQvJCmy0at2DcBkI4E9F7pMcz9auHsR62rsGhiG0J4_TGZA**&clientype=1&apptype=2 
+[2023-03-05 18:46:19] [WARNING]: 验证超时 
+[2023-03-05 18:47:01] [WARNING]: 登录需要滑条验证码, 请选择验证方式:  
+[2023-03-05 18:47:01] [WARNING]: 1. 使用浏览器抓取滑条并登录 
+[2023-03-05 18:47:01] [WARNING]: 2. 使用手机QQ扫码验证 (需要手Q和gocq在同一网络下). 
+[2023-03-05 18:47:01] [WARNING]: 请输入(1 - 2) (将在10秒后自动选择1)： 
+[2023-03-05 18:47:15] [WARNING]: 登录失败: 你的用户身份已失效，为保证帐号安全，请你重新登录。 
+[2023-03-05 18:47:30] [WARNING]: 登录需要滑条验证码, 请选择验证方式:  
+[2023-03-05 18:47:30] [WARNING]: 1. 使用浏览器抓取滑条并登录 
+[2023-03-05 18:47:30] [WARNING]: 2. 使用手机QQ扫码验证 (需要手Q和gocq在同一网络下). 
+[2023-03-05 18:47:30] [WARNING]: 请输入(1 - 2) (将在10秒后自动选择1)： 
+[2023-03-05 18:47:48] [WARNING]: 登录失败: 你的用户身份已失效，为保证帐号安全，请你重新登录。 
+[2023-03-05 18:48:01] [WARNING]: 登录需要滑条验证码, 请选择验证方式:  
+[2023-03-05 18:48:01] [WARNING]: 1. 使用浏览器抓取滑条并登录 
+[2023-03-05 18:48:01] [WARNING]: 2. 使用手机QQ扫码验证 (需要手Q和gocq在同一网络下). 
+[2023-03-05 18:48:01] [WARNING]: 请输入(1 - 2) (将在10秒后自动选择1)： 
+[2023-03-05 18:48:19] [WARNING]: 登录失败: 你的用户身份已失效，为保证帐号安全，请你重新登录。 
+[2023-03-05 18:48:46] [WARNING]: 登录需要滑条验证码, 请选择验证方式:  
+[2023-03-05 18:48:46] [WARNING]: 1. 使用浏览器抓取滑条并登录 
+[2023-03-05 18:48:46] [WARNING]: 2. 使用手机QQ扫码验证 (需要手Q和gocq在同一网络下). 
+[2023-03-05 18:48:46] [WARNING]: 请输入(1 - 2) (将在10秒后自动选择1)： 
+[2023-03-05 18:49:20] [WARNING]: Protocol -> device lock is disable. http api may fail. 

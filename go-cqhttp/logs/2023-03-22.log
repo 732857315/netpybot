@@ -1,0 +1,14 @@
+[2023-03-22 15:24:43] [WARNING]: 恢复会话失败: exchange_emp failed: 16 , 尝试使用正常流程登录. 
+[2023-03-22 15:24:49] [WARNING]: 登录需要滑条验证码, 请选择验证方式:  
+[2023-03-22 15:24:49] [WARNING]: 1. 使用浏览器抓取滑条并登录 
+[2023-03-22 15:24:49] [WARNING]: 2. 使用手机QQ扫码验证 (需要手Q和gocq在同一网络下). 
+[2023-03-22 15:24:49] [WARNING]: 请输入(1 - 2) (将在10秒后自动选择1)： 
+[2023-03-22 15:24:59] [WARNING]: 请前往该地址验证 -> https://captcha.go-cqhttp.org/captcha?id=RS4vYWdO&style=simple&aid=16&uin=195891736&sid=2483989342274104642&cap_cd=YcWWseUodWGb1errlzq8IiCh_19iPJ82CBk3qqWRVNZWYxRmfM0Rvw**&clientype=1&apptype=2 
+[2023-03-22 15:25:34] [WARNING]: 登录失败: 请使用手Q扫描二维码或短信登录。 
+[2023-03-22 15:25:51] [WARNING]: 登录需要滑条验证码, 请选择验证方式:  
+[2023-03-22 15:25:51] [WARNING]: 1. 使用浏览器抓取滑条并登录 
+[2023-03-22 15:25:51] [WARNING]: 2. 使用手机QQ扫码验证 (需要手Q和gocq在同一网络下). 
+[2023-03-22 15:25:51] [WARNING]: 请输入(1 - 2) (将在10秒后自动选择1)： 
+[2023-03-22 15:26:29] [WARNING]: 上报 Event 数据到 http://127.0.0.1:5701/ 失败: Post "http://127.0.0.1:5701/": dial tcp 127.0.0.1:5701: connectex: No connection could be made because the target machine actively refused it. 将进行第 1 次重试 
+[2023-03-22 15:26:33] [WARNING]: 上报 Event 数据到 http://127.0.0.1:5701/ 失败: Post "http://127.0.0.1:5701/": dial tcp 127.0.0.1:5701: connectex: No connection could be made because the target machine actively refused it. 将进行第 2 次重试 
+[2023-03-22 15:26:44] [WARNING]: Protocol -> device lock is disable. http api may fail. 

@@ -1,0 +1,16 @@
+示例：https://zhuanlan.zhihu.com/p/456363382
+http://www.kaotop.com/it/1075901.html
+itchat文档：https://itchat.readthedocs.io/zh/latest/
+
+修复：https://docs.google.com/document/d/124zjP9K3URbUHQ2rC0LMQxp_PoMQ0G-KOYFFTYeiYVA/edit#
+浏览器插件：https://github.com/leochen-g/wechrome
+
+sudo pip3 install itchat-uos==1.5.0.dev0
+sudo pip3 install multiprocess
+
+sudo vim /usr/local/lib/python3.10/dist-packages/itchat/components/login.py
+
+在login的函数里判断网页状态的
+while not isLoggedIn:
+里
+加入time.sleep(1)

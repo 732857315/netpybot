@@ -1,0 +1,16 @@
+接口说明：https://blog.csdn.net/chenwh_cn/article/details/108581139
+接口说明：https://www.shangyouw.cn/zml/arc256201.html
+接口说明：https://zhuanlan.zhihu.com/p/384157929
+接口说明：https://ext.dcloud.net.cn/plugin?id=7799
+登陆流程：https://blog.csdn.net/weixin_30603633/article/details/97747205
+登陆流程：https://blog.aaayun.cc/archives/899.html
+
+图片转换：https://www.wenjiangs.com/doc/fyxuyu0qpprq#b085051085648476c77352608f8a83a1
+
+登陆限制，使用UOS规避：https://wechaty.js.org/2022/07/26/free-uos-ui/
+规避：https://wechaty.js.org/2021/04/13/wechaty-uos-web/
+uos：https://docs.google.com/document/d/124zjP9K3URbUHQ2rC0LMQxp_PoMQ0G-KOYFFTYeiYVA/mobilebasic
+
+pip3 install pillow
+
+pip3 install lxml

@@ -1,0 +1,10 @@
+win   : https://blog.csdn.net/weixin_43423484/article/details/124408565
+linux : https://www.jianshu.com/p/f4a98a905011
+python: https://www.cnblogs.com/Avicii2018/p/16211052.html
+pythonmysql:https://blog.csdn.net/m0_59485658/article/details/126364328
+pythonmysql:https://blog.csdn.net/weixin_45191386/article/details/125033793
+菜鸟教程：https://m.runoob.com/python/python-mysql.html
+yum install mysql-devel
+yum install mysql
+pip3 install mysqlclient
+pip3 install PyMySQL

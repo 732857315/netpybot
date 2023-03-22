@@ -1,0 +1,14 @@
+https://www.likecs.com/show-306656881.html
+http://www.xoxxoo.com/index/index/article/id/772
+
+sudo apt-get install python3-dev
+sudo apt-get install gcc
+
+sudo yum install python3-devel
+sudo yum install gcc
+pip install cython
+pip install easycython
+
+#将需要加密的.py文件重命名为.pyx
+easycython *.pyx
+

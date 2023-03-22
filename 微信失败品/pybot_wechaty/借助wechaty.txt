@@ -1,0 +1,56 @@
+官方：https://github.com/wechaty/python-wechaty
+中文首页：https://wechaty.readthedocs.io/zh_CN/latest/
+教程        ：https://wechaty.js.org/2021/02/03/python-wechaty-for-padlocal-puppet-service/
+pip3 install asyncio
+pip3 install Wechaty
+
+takens获取：http://pad-local.com/#/tokens
+
+（购买200一个月，，，不过想办法加开源项目可以获得一年，一年最便宜1200，不如直接用企业微信）
+免费七天takens20230308 : puppet_padlocal_c660cc72cca54a5f8d2b5a54485560f8
+uuid                  ： ab9971ee-666d-4e84-a189-b98c32d65b2b
+示例启动：
+# 第一步，下载源码
+# 第二步，cd到源码的目录
+cd python-wechaty-getting-started
+ 
+# 第三步，安装
+pip install -r requirements.txt
+ 
+# 第四步，配置服务和TOKEN
+Linux和Mac Os命令:
+先安装nodejs16.6
+npm install wechaty-puppet-padlocal
+export WECHATY_PUPPET=wechaty-puppet-padlocal
+export WECHATY_PUPPET_PADLOCAL_TOKEN="puppet_padlocal_c660cc72cca54a5f8d2b5a54485560f8"
+npm start
+export WECHATY_LOG="verbose"
+export WECHATY_PUPPET="wechaty-puppet-padlocal"
+export WECHATY_PUPPET_PADLOCAL_TOKEN="puppet_padlocal_c660cc72cca54a5f8d2b5a54485560f8"
+
+export WECHATY_PUPPET_SERVER_PORT="8001"
+export WECHATY_TOKEN="ab9971ee-666d-4e84-a189-b98c32d65b2b"
+
+Windows命令:
+先安装nodejs16.6
+npm install wechaty-puppet-padlocal
+set WECHATY_PUPPET=wechaty-puppet-padlocal
+set WECHATY_PUPPET_PADLOCAL_TOKEN="puppet_padlocal_c660cc72cca54a5f8d2b5a54485560f8"
+npm start
+set WECHATY_LOG="verbose"
+set WECHATY_PUPPET="wechaty-puppet-padlocal"
+set WECHATY_PUPPET_PADLOCAL_TOKEN="puppet_padlocal_c660cc72cca54a5f8d2b5a54485560f8"
+
+set WECHATY_PUPPET_SERVER_PORT="8001"
+set WECHATY_TOKEN="ab9971ee-666d-4e84-a189-b98c32d65b2b"
+
+# 第五步，启动微信机器人
+cd到examples目录
+cd examples
+ 
+执行ding-dong-bot.py
+python ding-dong-bot.py
+
+测试是否成功：
+curl https://api.chatie.io/v0/hosties/$WECHATY_TOKEN
+{"host":"127.0.0.1","port":8001}

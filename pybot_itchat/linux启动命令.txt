@@ -1,0 +1,3 @@
+nohup python3 ./test_itchat.py > ./start20230311.out 2>&1 &
+
+nohup python3 ./test_itchat.py > ./start20230312.out 2>&1 &

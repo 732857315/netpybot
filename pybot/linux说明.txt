@@ -1,0 +1,52 @@
+
+1.如果3.10以上,直接python安装包：
+pip3 install Flask
+pip3 install multiprocess
+
+
+nohup python3 ./main.py > ./start2023030502.out 2>&1 &
+
+nohup python3 ./main.py > ./start20230310.out 2>&1 &
+
+nohup python3 ./main.py > ./start20230315.out 2>&1 &
+
+ps -aux|grep wxc
+kill 命令号
+
+
+2.如果低版本：
+卸载 https://blog.csdn.net/lin_bingfeng/article/details/123213943
+
+#卸载python3
+rpm -qa|grep python3|xargs rpm -ev --allmatches --nodeps 
+
+#删除所有残余文件
+whereis python3 |xargs rm -frv
+
+#查看现有安装的python，验证是否删除干净
+whereis python 
+
+
+
+wget https://www.python.org/ftp/python/3.11.2/Python-3.11.2.tar.xz
+
+tar -xvf ./*.xz
+cd ./Python-3.11.2
+
+yum -y install gcc zlib zlib-devel libffi libffi-devel
+yum install readline-devel
+yum install openssl-devel openssl11 openssl11-devel -y
+
+export CFLAGS=$(pkg-config --cflags openssl11)
+export LDFLAGS=$(pkg-config --libs openssl11)
+ 
+./configure --prefix=/usr/python3.11 --with-ssl
+make 
+make install
+
+ln -s /usr/python3.11/bin/python3 /usr/bin/python3
+ln -s /usr/python3.11/bin/pip3 /usr/bin/pip3
+
+pip3 install Flask
+/usr/python3.11/bin/python3 -m pip install --upgrade pip
+pip3 install requests
