@@ -1,6 +1,0 @@
-sudo apt update
-sudo apt install python3-pip
-
-
-echo 'export PATH=/home/ubuntu/.local/bin:$PATH' >>~/.bashrc
-source ~/.bashrc
